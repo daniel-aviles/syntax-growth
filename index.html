@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax Growth - Agencia de Crecimiento IA para SaaS B2B</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Configuración de estilos personalizados en Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-dark': '#0A192F', // Azul oscuro profundo para fondos
+                        'brand-light': '#CCD6F6', // Texto claro, menos prominente
+                        'brand-accent': '#39FF14', // Verde neón para acentos y CTAs
+                        'brand-white': '#E6F1FF', // Texto principal y títulos
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Estilo para un sutil efecto de brillo en el color de acento */
+        .glow-effect {
+            box-shadow: 0 0 5px theme('colors.brand-accent'), 
+                        0 0 15px theme('colors.brand-accent'), 
+                        0 0 25px theme('colors.brand-accent');
+        }
+    </style>
+</head>
+
+<body class="bg-brand-dark text-brand-light font-sans antialiased">
+
+    <!-- Contenedor Principal -->
+    <div class="container mx-auto px-6 py-4">
+
+        <!-- Barra de Navegación -->
+        <header id="home" class="flex justify-between items-center py-4">
+            <h1 class="text-2xl font-bold text-brand-white">Syntax<span class="text-brand-accent">.</span>Growth</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="hover:text-brand-accent transition-colors duration-300">Servicios</a>
+                <a href="#why-us" class="hover:text-brand-accent transition-colors duration-300">Por Qué Nosotros</a>
+                <a href="#contact" class="bg-brand-accent/20 text-brand-accent border border-brand-accent/50 px-4 py-2 rounded-md hover:bg-brand-accent/30 transition-colors duration-300">Solicitar Auditoría</a>
+            </nav>
+            <!-- Menú móvil (placeholder) -->
+            <div class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </div>
+        </header>
+
+        <main>
+            <!-- Sección Héroe -->
+            <section class="text-center py-20 md:py-32">
+                <h2 class="text-4xl md:text-6xl font-black text-brand-white leading-tight max-w-4xl mx-auto">
+                    La Primera Agencia de Crecimiento operada por <span class="text-brand-accent">Inteligencia Artificial</span> para SaaS B2B
+                </h2>
+                <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto text-brand-light">
+                    Integramos análisis predictivo y contenido a escala para reducir tu CAC y llenar tu pipeline con leads listos para la venta.
+                </p>
+                <div class="mt-10">
+                    <a href="#contact" class="bg-brand-accent text-brand-dark font-bold py-4 px-8 rounded-lg text-lg hover:scale-105 transform transition-transform duration-300 inline-block glow-effect">
+                        Solicita tu Auditoría de Crecimiento
+                    </a>
+                </div>
+            </section>
+
+            <!-- Sección de "A quién ayudamos" (ICP) -->
+            <section id="icp" class="py-20">
+                <div class="text-center mb-12">
+                     <h3 class="text-sm uppercase font-bold text-brand-accent tracking-widest">NUESTRO ENFOQUE</h3>
+                     <h4 class="text-3xl md:text-4xl font-bold text-brand-white mt-2">Diseñado para Fundadores y Líderes de Marketing en SaaS</h4>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-brand-dark/50 border border-brand-light/10 p-8 rounded-lg">
+                        <h5 class="text-xl font-bold text-brand-white">¿Tu CAC es muy alto?</h5>
+                        <p class="mt-2 text-brand-light">Utilizamos data para encontrar y escalar los canales más rentables, optimizando cada euro invertido.</p>
+                    </div>
+                    <div class="bg-brand-dark/50 border border-brand-light/10 p-8 rounded-lg">
+                        <h5 class="text-xl font-bold text-brand-white">¿Faltan leads cualificados?</h5>
+                        <p class="mt-2 text-brand-light">Generamos contenido de alta precisión que atrae a tu cliente ideal y lo prepara para la compra.</p>
+                    </div>
+                    <div class="bg-brand-dark/50 border border-brand-light/10 p-8 rounded-lg">
+                        <h5 class="text-xl font-bold text-brand-white">¿El ROI de tu contenido es bajo?</h5>
+                        <p class="mt-2 text-brand-light">Medimos el rendimiento de cada pieza de contenido, enfocándonos en lo que genera demos y trials.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Servicios -->
+            <section id="services" class="py-20">
+                <div class="text-center mb-12">
+                    <h3 class="text-sm uppercase font-bold text-brand-accent tracking-widest">NUESTROS SERVICIOS</h3>
+                    <h4 class="text-3xl md:text-4xl font-bold text-brand-white mt-2">Un Sistema, No una Lista de Tareas</h4>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <!-- Servicio 1: Auditoría -->
+                    <div class="bg-brand-dark/50 border border-brand-light/10 p-8 rounded-lg">
+                        <span class="text-brand-accent font-black text-2xl">01</span>
+                        <h5 class="text-2xl font-bold text-brand-white mt-4">Growth Potential Audit</h5>
+                        <p class="mt-3 text-brand-light">Un análisis intensivo de tus datos para entregar un plan de crecimiento accionable. Identificamos los cuellos de botella y las oportunidades de mayor impacto para un crecimiento inmediato.</p>
+                    </div>
+                    <!-- Servicio 2: Retainer -->
+                    <div class="bg-brand-dark/50 border border-brand-light/10 p-8 rounded-lg">
+                        <span class="text-brand-accent font-black text-2xl">02</span>
+                        <h5 class="text-2xl font-bold text-brand-white mt-4">Growth Engine Retainer</h5>
+                        <p class="mt-3 text-brand-light">Nos convertimos en tu socio de crecimiento, ejecutando el plan y optimizando continuamente tu estrategia con nuestro motor de IA para garantizar un flujo constante de leads cualificados.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección "Por Qué Nosotros" -->
+            <section id="why-us" class="py-20">
+                 <div class="text-center mb-12">
+                    <h3 class="text-sm uppercase font-bold text-brand-accent tracking-widest">NUESTRA VENTAJA</h3>
+                    <h4 class="text-3xl md:text-4xl font-bold text-brand-white mt-2">No Operamos por Intuición, Operamos con Evidencia</h4>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center p-4">
+                        <h5 class="text-xl font-bold text-brand-white">Análisis Predictivo</h5>
+                        <p class="mt-2 text-brand-light">Identificamos tendencias y oportunidades antes que el mercado.</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="text-xl font-bold text-brand-white">Ejecución sin Sesgos</h5>
+                        <p class="mt-2 text-brand-light">Las decisiones se basan en datos, no en opiniones.</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="text-xl font-bold text-brand-white">Optimización a Escala</h5>
+                        <p class="mt-2 text-brand-light">Testeamos cientos de variables para maximizar el rendimiento.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Contacto / CTA Final -->
+            <section id="contact" class="bg-brand-dark/50 border border-brand-light/10 rounded-lg py-16 my-20">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h4 class="text-3xl font-bold text-brand-white">¿Listo para activar tu motor de crecimiento?</h4>
+                    <p class="mt-4 text-brand-light">El primer paso es nuestra Auditoría de Potencial de Crecimiento. Es la forma más inteligente de evaluar si somos el socio adecuado para ti, con un riesgo mínimo y un valor máximo.</p>
+                     <div class="mt-8">
+                        <a href="mailto:intake@syntaxgrowth.ai" class="bg-brand-accent text-brand-dark font-bold py-4 px-8 rounded-lg text-lg hover:scale-105 transform transition-transform duration-300 inline-block glow-effect">
+                            Hablemos de tu Auditoría
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 border-t border-brand-light/10">
+            <p class="text-brand-light">&copy; 2025 Syntax Growth. Todos los derechos reservados.</p>
+            <p class="text-sm text-brand-light/50 mt-2">Una Agencia de Crecimiento Impulsada por IA</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
